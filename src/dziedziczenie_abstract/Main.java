@@ -6,7 +6,7 @@ package dziedziczenie_abstract;
 public class Main {
 
     public static void main(String[] args) {
-        Kanapka n1 = new Indyk("indyk", "ciemne", 15, 13.5, "indyk", "kola");
+        Kanapka n1 = new Indyk("indyk", "ciemne", 15, 13.5, "kola");
         Kanapka n3 = new Wegetarianska("wegetarianska", "piezs", 15, 12, "jabko", "kola");
         System.out.println(n1);
         System.out.println(n3);

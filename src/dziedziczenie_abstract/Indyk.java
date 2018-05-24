@@ -10,11 +10,10 @@ public class Indyk extends Kanapka {
 
     private String mieso, napoj;
 
-    public Indyk(String nazwa, String pieczywo, int wielkosc, double cena, String mieso, String napoj) {
-        super( pieczywo, wielkosc, cena);
-        setMieso(mieso);
+    public Indyk(String nazwa, String pieczywo, int wielkosc, double cena, String napoj) {
+        super(pieczywo, wielkosc, cena);
+        setMieso(nazwa);
         setNapoj(napoj);
-
     }
 
     public String getMieso() {
