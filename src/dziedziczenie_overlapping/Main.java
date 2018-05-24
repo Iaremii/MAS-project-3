@@ -13,6 +13,7 @@ public class Main {
         Film test = new Film(1, "Harry Poter", "PL", "1002", "EC2212", "ES2212", EnumSet.of(FilmyRodzaje.Horror, FilmyRodzaje.Komedia));
         System.out.println(test);
         test.usunRodzaj(FilmyRodzaje.Komedia);
+        test.setKomediaLicensja("sasa");
         System.out.println(test);
 
     }

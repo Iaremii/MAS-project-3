@@ -124,10 +124,6 @@ public class Film {
         return typ;
     }
 
-    @Override
-    public String toString() {
-        return "Film{" + "id=" + id + ", nazwa=" + nazwa + ", kraj=" + kraj + ", rok=" + rok + ", horrorLicensja=" + horrorLicensja + ", komediaLicensja=" + komediaLicensja + ", rodzaje=" + rodzaje + '}';
-    }
 
     void usunRodzaj(FilmyRodzaje filmyRodzaje) {
         if (rodzaje.contains(filmyRodzaje)) {
@@ -137,6 +133,11 @@ public class Film {
             throw new IllegalArgumentException("Nieznany rodzaj filmu");
         }
 
+    }
+    
+    @Override
+    public String toString() {
+        return "Film{" + "id=" + id + ", nazwa=" + nazwa + ", kraj=" + kraj + ", rok=" + rok + ", horrorLicensja=" + horrorLicensja + ", komediaLicensja=" + komediaLicensja + ", rodzaje=" + rodzaje + '}';
     }
 
 }
